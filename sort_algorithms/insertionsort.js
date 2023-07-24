@@ -12,5 +12,3 @@ export default function insertionSort(list) {
 
 	return list;
 }
-
-console.log(insertionSort([8, -3, 13, -5, 6, 1]))

@@ -29,16 +29,10 @@ function part(list, left, right) {
 	return left;
 }
 
-function qsort(list, left = 0, right = list.length - 1) {
-	console.log(`${left} ${right}`);
+export default function qsort(list, left = 0, right = list.length - 1) {
 	if ((right - left) < 1) return;
 
 	const mid = part(list, left, right);
 	qsort(list, left, mid - 1);
 	qsort(list, mid + 1, right);
 }
-
-const list = [-3, 7, 2, 19, -7, 9, 0];
-qsort(list);
-qsort(list);
-console.log(list)

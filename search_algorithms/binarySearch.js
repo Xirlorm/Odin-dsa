@@ -1,3 +1,5 @@
+'use strict';
+
 export default function binarySearch(array, query) {
     let low = 0, high = array.length;
 

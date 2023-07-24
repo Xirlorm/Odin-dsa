@@ -36,16 +36,3 @@ class Vertix {
 		}
 	}
 }
-
-const alice = new Vertix('alice');
-const bob = new Vertix('bob');
-const cynthia = new Vertix('cynthia');
-alice.addAdjacentVertix(bob)
-alice.addAdjacentVertix(cynthia)
-bob.addAdjacentVertix(cynthia)
-cynthia.addAdjacentVertix(bob)
-cynthia.addAdjacentVertix(new Vertix('cleo'))
-
-// alice.depthFirstSearch(console.log)
-bob.breadthFirstSearch(console.log)
-alice.depthFirstSearch(console.log)
